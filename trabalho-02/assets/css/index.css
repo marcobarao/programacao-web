@@ -1,0 +1,83 @@
+body, html {
+  background-image: #ffffff;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 950px;
+  background-image: url(../imgs/header-the-flash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.header::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  height: 100%;
+  width: 150%;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  background-color: #ffffff;
+}
+
+.brand {
+  position: absolute;
+  display: inline-block;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 420px;
+}
+
+.nav {
+  display: none;
+}
+
+.gradient-button {
+  position: absolute;
+  background-image: linear-gradient(-90deg, #ff9944, #fc6076);
+  width: 100px;
+  height: 100px;
+  right: 15%;
+  bottom: 15%;
+  border-radius: 50%;
+  border: none;
+  z-index: 999;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  background: -webkit-linear-gradient(-90deg, #ff9944, #fc6076);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(-90deg, #ff9944, #fc6076)
+}
+
+section {
+  padding: 0 25px;
+}
+
+.content {
+
+}

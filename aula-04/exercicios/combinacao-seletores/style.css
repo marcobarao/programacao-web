@@ -1,0 +1,40 @@
+/* Faça com que todos os elementos com a classe destaque
+fiquem com fundo verde */
+.destaque {
+  background-color: green;
+}
+
+/* Faça com que todos os elementos p com a classe destaque
+fiquem com fonte itálica */
+p.destaque {
+  font-style: italic;
+}
+
+/* Faça com que todos os elementos com a classe 'destaque' dentro
+de elementos com a classe 'principal' fiquem com fundo preto e 
+cor de fonte vermelha */
+.principal.destaque {
+  background-color: #000000;
+  color: #ff0000;
+}
+
+/* Faça com que todos os elementos article filhos de elementos
+section fiquem com cor cinza e fonte negrito */
+section  article {
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Faça com que todos os elementos do tipo h2 filhos diretos de um elemento section
+fiquem com a cor verde */
+section > h2 {
+  color: #00ff00;
+}
+
+/* Faça com que todos os elementos de entrada de lista (li)
+dentro de elementos section (independente da posição na hierarquia
+fiquem da cor vermelha e sublinhado (text-decoration: underline;) */
+section li {
+  color: #ff0000;
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.pos {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+#p3 {
+  clear: left;
+}

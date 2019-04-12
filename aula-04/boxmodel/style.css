@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#container {
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  overflow: auto;
+  background: url(https://upload.wikimedia.org/wikipedia/pt/thumb/6/67/Chocobo.png/230px-Chocobo.png) no-repeat right bottom #220000;
+}
+
+#content {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border: 1px solid black;
+}

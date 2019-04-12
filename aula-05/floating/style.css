@@ -1,0 +1,27 @@
+div {
+  background-color: lightgray;
+}
+
+.pos {
+  float: left;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+#p1 {
+  background-color: darkblue;
+}
+
+#p2 {
+  clear: left;
+  background-color: darkred;
+}
+
+#p3 {
+  background-color: darkgreen;
+}
+
+#p4 {
+  clear: left;
+}

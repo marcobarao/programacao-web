@@ -1,0 +1,38 @@
+div {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+#d1 {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+}
+
+#d2 {
+  background-color: darkblue;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 1200px) {
+  #d1 {
+    width: 75%;
+  }
+
+  #d2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #d1 {
+    width: 50%;
+  }
+
+  #d2 {
+    width: 100px;
+    height: 100px;
+  }
+}

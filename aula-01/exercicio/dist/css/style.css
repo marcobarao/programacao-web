@@ -1,0 +1,79 @@
+html {
+  font-family: 'Ubuntu', Calibri;
+  font-size: 16px;
+}
+
+.content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.main-summary {
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.sub-summary {
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+.subline {
+  position: relative;
+  color: #833c0b;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.subline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #833c0b;
+}
+
+.paragraph {
+  margin: 0.5em 10px;
+  line-height: 1.3em;
+}
+
+.link-content {
+  color: #833c0b;  
+}
+
+.figure-content {
+  width: 100%;
+  height: auto;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.image-content {
+  width: 90%;
+  height: auto;
+}
+
+.image-alt {
+  color: #333;
+  font-size: 0.8em;
+  font-weight: 300;
+}
