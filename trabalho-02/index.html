@@ -6,26 +6,27 @@
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/twelve-columns.css">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header class="col-sm-12 header">
-    <div class="brand">
+  <header class="col-sm-12 col-md-12 header">
+    <a href="./index.html" class="brand">
       <img class="logo" src="./assets/imgs/logo.svg" alt="The Flash">
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#synopsis">Sinopse</a></li>
-        <li><a href="#season">Temporadas</a></li>
-        <li><a href="#cast">Elenco</a></li>
-        <li><a href="#production">Produ&ccedil;&atilde;o</a></li>
-        <li><a href="curiosities.html" target="_blank">Curiosidades</a></li>
+    </a>
+    <nav>
+      <ul class="list">
+        <li class="item"><a class="link" href="#about">Sobre</a></li>
+        <li class="item"><a class="link" href="#synopsis">Sinopse</a></li>
+        <li class="item"><a class="link" href="#season">Temporadas</a></li>
+        <li class="item" id="menuCast"><a class="link" href="#cast">Elenco</a></li>
+        <li class="item"><a class="link" href="#production">Produ&ccedil;&atilde;o</a></li>
+        <li class="item"><a class="link" href="curiosities.html" target="_blank">Curiosidades</a></li>
       </ul>
     </nav>
-    <button class="gradient-button">
+    <a href="#trailler" class="gradient-button">
       <img src="./assets/imgs/icons/play.svg" class="play-icon">
-    </button>
+    </a>
   </header>
   <section id="#about">
     <h2 class="title">The Flash</h2>
@@ -40,9 +41,9 @@
         No Brasil, a s&eacute;rie &eacute; exibida pela Warner Channel e pela Rede Globo.
       </p>
     </article>
-    <figure>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/irxulSWL_qg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <figcaption>Introdu&ccedil;o de The Flash</figcaption>
+    <figure id="trailler">
+      <iframe src="https://www.youtube.com/embed/irxulSWL_qg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <figcaption>Introdu&ccedil;&atilde;o de The Flash</figcaption>
     </figure>
   </section>
   <section id="synopsis">
@@ -52,100 +53,110 @@
         Ap&oacute;s testemunhar o estranho assassinato de sua m&atilde;e e a injusta acusa&ccedil;&atilde;o de seu pai pelo crime, Barry Allen fica sob os cuidados do detetive Joe West e sua filha Iris West. Barry se torna brilhante, mas socialmente, um cientista forense desconhecido trabalhando para o Departamento de Pol&iacute;cia de Central City. Sua obsess&atilde;o por seu tr&aacute;gico passado faz com que ele fique separado das demais pessoas ao seu redor; ele investiga casos frios, ocorr&ecirc;ncias paranormais, e vazamentos de ponta de avan&ccedil;os cient&iacute;ficos que podem dar uma luz no caso do assassinato de sua m&atilde;e. Ningu&eacute;m acredita em sua descri&ccedil;&atilde;o do crime — que uma bola de raio com o rosto de um homem invadiu sua casa naquela noite e matou sua m&atilde;e — e Barry &eacute; for&ccedil;ado a procurar por si mesmo pistas que limpem o nome de seu pai. Quatorze anos depois da morte de sua m&atilde;e, uma explos&atilde;o de um avan&ccedil;ado Acelerador de Part&iacute;culas, durante sua apresenta&ccedil;&atilde;o ao p&uacute;blico, banha a cidade com uma forma de radia&ccedil;&atilde;o previamente desconhecida durante uma tempestade. Barry &eacute; atingido por um raio da tempestade e banhado nos produtos qu&iacute;micos de seu laborat&oacute;rio. Acordando depois de um coma de nove meses, ele descobre que tem a habilidade de se mover mais r&aacute;pido do que qualquer ser humano. Harrison Wells, criador e respons&aacute;vel pela falha do Acelerador de Part&iacute;culas, descreve a natureza especial de Barry como um "meta-humano"; Barry, mais tarde, descobre que ele n&atilde;o &eacute; o &uacute;nico que mudou com a radia&ccedil;&atilde;o. Ele promete usar seus poderes para proteger Central City dos riscos criminais dos meta-humanos. E ent&atilde;o, associado por alguns amigos pr&oacute;ximos que guardam seu segredo, Barry adquire uma nova personalidade conhecida como Flash.
       </p>
     </article>
-    <div>
-      <a href="./personagens/barry-allen.html#barryFlash">
-        <figure>
-          <img src="./imgs/barry-allen.jpg" alt="Barry Allen">
+    <div class="row">
+      <div class="col-md-3 col-sm-8 spacing-persons">
+        <figure class="figure-person">
+          <a href="./personagens/barry-allen.html#barryFlash">
+            <img src="./assets/imgs/barry-allen.jpg" alt="Barry Allen" class="person">
+          </a>
           <figcaption>Barry Allen</figcaption>
         </figure>
-      </a>
-      <a href="./personagens/iris-west.html#irisWest">
-        <figure>
-          <img src="./imgs/iris-west.jpg" alt="Iris West">
+      </div>
+      <div class="col-md-3 col-sm-8 spacing-persons">
+        <figure class="figure-person">
+          <a href="./personagens/iris-west.html#irisWest">
+            <img src="./assets/imgs/iris-west.jpg" alt="Iris West" class="person">
+          </a>
           <figcaption>Iris West</figcaption>
         </figure>
-      </a>
-      <a href="./personagens/joe-west.html#joeWest">
-        <figure>
-          <img src="./imgs/joe-west.jpg" alt="Joe West">
+      </div>
+      <div class="col-md-3 col-sm-8 spacing-persons">
+        <figure class="figure-person">
+          <a href="./personagens/joe-west.html#joeWest">
+            <img src="./assets/imgs/joe-west.jpg" alt="Joe West" class="person">
+          </a>
           <figcaption>Joe West</figcaption>
         </figure>
-      </a>
+      </div>
     </div>
   </section>
   <section id="season">
     <h2>Temporadas</h2>
-    <table>
-        <thead>
-          <tr>
-            <th rowspan="2">Temporada</th>
-            <th rowspan="2">Epis&oacute;dios</th>
-            <th colspan="2">Originalmente exibido</th>
-          </tr>
-          <tr>
-              <th>Estreia da temporada</th>
-              <th>Final da temporada</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="#season1">
-                1
-              </a>
-            </td>
-            <td>23</td>
-            <td>7 de outubro de 2014</td>
-            <td>19 de maio de 2015</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#season2">
-                2
-              </a>
-            </td>
-            <td>23</td>
-            <td>6 de outubro de 2015</td>
-            <td>24 de maio de 2016</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#season3">
-                3
-              </a>
-            </td>
-            <td>23</td>
-            <td>4 de outubro de 2016</td>
-            <td>23 de maio de 2017</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#season4">
-                4
-              </a>
-            </td>
-            <td>23</td>
-            <td>10 de outubro de 2017</td>
-            <td>22 de maio de 2018</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#season5">
-                5
-              </a>
-            </td>
-            <td>22</td>
-            <td>9 de outubro de 2018</td>
-            <td>????</td>
-          </tr>
-        </tbody>
-      </table>
-      <aside>
-        <figure>
-          <img src="./imgs/becomes.gif" alt="Barry Allen sendo atingido pelo raio">
-          <figcaption>Barry Allen sendo atingido pelo raio</figcaption>
-        </figure>
-      </aside>
+    <div class="row">
+      <div class="col-md-12 col-lg-7">
+        <table id="season-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Temporada</th>
+                <th rowspan="2">Epis&oacute;dios</th>
+                <th colspan="2">Originalmente exibido</th>
+              </tr>
+              <tr>
+                  <th>Estreia da temporada</th>
+                  <th>Final da temporada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#season1">
+                    1
+                  </a>
+                </td>
+                <td>23</td>
+                <td>7 de outubro de 2014</td>
+                <td>19 de maio de 2015</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#season2">
+                    2
+                  </a>
+                </td>
+                <td>23</td>
+                <td>6 de outubro de 2015</td>
+                <td>24 de maio de 2016</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#season3">
+                    3
+                  </a>
+                </td>
+                <td>23</td>
+                <td>4 de outubro de 2016</td>
+                <td>23 de maio de 2017</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#season4">
+                    4
+                  </a>
+                </td>
+                <td>23</td>
+                <td>10 de outubro de 2017</td>
+                <td>22 de maio de 2018</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#season5">
+                    5
+                  </a>
+                </td>
+                <td>22</td>
+                <td>9 de outubro de 2018</td>
+                <td>????</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="col-md-12 col-lg-5">
+          <figure>
+            <img src="./assets/imgs/becomes.gif" alt="Barry Allen sendo atingido pelo raio">
+            <figcaption>Barry Allen sendo atingido pelo raio</figcaption>
+          </figure>
+        </aside>
+      </div>
       <article id="season1">
         <h3>1&ordf; temporada</h3>
         <p>
@@ -256,67 +267,69 @@
               "(A Corrida de Sua Vida)"</li>
         </ol>
       </article>
-      <aside>
-        <a href="./personagens/caitlin-snow.html#caitlinNevasca">
+      <h3>3&ordf; temporada</h3>
+      <div class="row">
+        <aside class="col-sm-12 col-md-3 aside-spacing">
           <figure>
-            <img src="./imgs/caitlin-nevasca.jpg" alt="Caitlin e Nevasca">
+            <a href="./personagens/caitlin-snow.html#caitlinNevasca">
+              <img src="./assets/imgs/caitlin-nevasca.jpg" alt="Caitlin e Nevasca">
+            </a>
             <figcaption>Caitlin e Nevasca</figcaption>
           </figure>
-        </a>
-      </aside>
-      <article id="season3">
-        <h3>3&ordf; temporada</h3>
-        <p>Ao mudar seu passado, Barry altera a linha do tempo, resultando na cria&ccedil;&atilde;o do "Ponto de Igni&ccedil;&atilde;o". Embora ele consiga restaurar a linha do tempo, isso cria novas amea&ccedil;as, que incluem Savitar. Depois que Harry e Jesse voltam para a Terra-2, outro c&oacute;pia de Harrison Wells &eacute; recrutado: o escritor "H.R.". Wally e Caitlin come&ccedil;am a manifestar habilidades meta-humanas; Wally se torna o velocista Kid Flash, enquanto Caitlin &eacute; for&ccedil;ada a suprimir seus poderes de gelo para evitar se tornar a Nevasca. Quando Barry viaja acidentalmente para o futuro e v&ecirc; Iris ser morta por Savitar, ele fica desesperado para mudar o futuro e evitar que isso aconte&ccedil;a.</p>
-        <h4>Epis&oacute;dios</h4>
-        <ol>
-          <li>"Flashpoint" 
-              "(Ponto de Igni&ccedil;&atilde;o)"</li>
-          <li>"Paradox" 
-              "(Paradoxo)"</li>
-          <li>"Magenta" 
-              "(Magenta)"</li>
-          <li>"The New Rogues" 
-              "(Os Novos Trapaceiros)"</li>
-          <li>"Monster" 
-              "(Monstro)"</li>
-          <li>"Shade" 
-              "(Penumbra)"</li>
-          <li>"Killer Frost" 
-              "(Nevasca)"</li>
-          <li>"Invasion!" 
-              "(Invas&atilde;o!)"</li>
-          <li>"The Present" 
-              "(O Presente)"</li>
-          <li>"Borrowing Problems from the Future" 
-              "(Problemas Emprestados do Futuro)"</li>
-          <li>"Dead or Alive" 
-              "(Morto ou Vivo)"</li>
-          <li>"Untouchable" 
-              "(Intoc&aacute;vel)"</li>
-          <li>"Attack on Gorilla City" 
-              "(Ataque na Cidade Gorila)"</li>
-          <li>"Attack on Central City" 
-              "(Ataque em Central City)"</li>
-          <li>"The Wrath of Savitar" 
-              "(A Ira de Savitar)"</li>
-          <li>"Into the Speed Force" 
-              "(Entrando na For&ccedil;a de Acelera&ccedil;&atilde;o)"</li>
-          <li>"Duet" 
-              "(Dueto)"</li>
-          <li>	"Abra Kadabra" 
-              "(Abra Kadabra)"</li>
-          <li>"The Once and Future Flash" 
-              "(O &uacute;nico e Eterno Flash)"</li>
-          <li>"I Know Who You Are" 
-              "(Eu Sei Quem Voc&ecirc; &eacute;)"</li>
-          <li>"Cause and Effect" 
-              "(Causa e Efeito)"</li>
-          <li>"Infantino Street" 
-              "(Rua Infantino)"</li>
-          <li>"Finish Line" 
-              "(Linha de Chegada)"</li>
-        </ol>
-      </article>
+        </aside>
+        <article id="season3" class="col-sm-12 col-md-8">
+          <p>Ao mudar seu passado, Barry altera a linha do tempo, resultando na cria&ccedil;&atilde;o do "Ponto de Igni&ccedil;&atilde;o". Embora ele consiga restaurar a linha do tempo, isso cria novas amea&ccedil;as, que incluem Savitar. Depois que Harry e Jesse voltam para a Terra-2, outro c&oacute;pia de Harrison Wells &eacute; recrutado: o escritor "H.R.". Wally e Caitlin come&ccedil;am a manifestar habilidades meta-humanas; Wally se torna o velocista Kid Flash, enquanto Caitlin &eacute; for&ccedil;ada a suprimir seus poderes de gelo para evitar se tornar a Nevasca. Quando Barry viaja acidentalmente para o futuro e v&ecirc; Iris ser morta por Savitar, ele fica desesperado para mudar o futuro e evitar que isso aconte&ccedil;a.</p>
+          <h4>Epis&oacute;dios</h4>
+          <ol>
+            <li>"Flashpoint" 
+                "(Ponto de Igni&ccedil;&atilde;o)"</li>
+            <li>"Paradox" 
+                "(Paradoxo)"</li>
+            <li>"Magenta" 
+                "(Magenta)"</li>
+            <li>"The New Rogues" 
+                "(Os Novos Trapaceiros)"</li>
+            <li>"Monster" 
+                "(Monstro)"</li>
+            <li>"Shade" 
+                "(Penumbra)"</li>
+            <li>"Killer Frost" 
+                "(Nevasca)"</li>
+            <li>"Invasion!" 
+                "(Invas&atilde;o!)"</li>
+            <li>"The Present" 
+                "(O Presente)"</li>
+            <li>"Borrowing Problems from the Future" 
+                "(Problemas Emprestados do Futuro)"</li>
+            <li>"Dead or Alive" 
+                "(Morto ou Vivo)"</li>
+            <li>"Untouchable" 
+                "(Intoc&aacute;vel)"</li>
+            <li>"Attack on Gorilla City" 
+                "(Ataque na Cidade Gorila)"</li>
+            <li>"Attack on Central City" 
+                "(Ataque em Central City)"</li>
+            <li>"The Wrath of Savitar" 
+                "(A Ira de Savitar)"</li>
+            <li>"Into the Speed Force" 
+                "(Entrando na For&ccedil;a de Acelera&ccedil;&atilde;o)"</li>
+            <li>"Duet" 
+                "(Dueto)"</li>
+            <li>	"Abra Kadabra" 
+                "(Abra Kadabra)"</li>
+            <li>"The Once and Future Flash" 
+                "(O &uacute;nico e Eterno Flash)"</li>
+            <li>"I Know Who You Are" 
+                "(Eu Sei Quem Voc&ecirc; &eacute;)"</li>
+            <li>"Cause and Effect" 
+                "(Causa e Efeito)"</li>
+            <li>"Infantino Street" 
+                "(Rua Infantino)"</li>
+            <li>"Finish Line" 
+                "(Linha de Chegada)"</li>
+          </ol>
+        </article>
+      </div>
       <article id="season4">
         <h3>4&ordf; temporada</h3>
         <p>
@@ -418,7 +431,7 @@
   </section>
   <section id="cast">
     <h2>Elenco e personagens</h2>
-    <h3>Principal</h3>
+    <h3 class="green">Principal</h3>
     <table>
       <thead>
         <tr>
@@ -437,12 +450,12 @@
       <tbody>
         <tr>
           <td>
-              <a href="./personagens/barry-allen.html#grantGustin">Grant Gustin</a>
+            <a href="./personagens/barry-allen.html#grantGustin">Grant Gustin</a>
           </td>
           <td>
             <a href="./personagens/barry-allen.html#barryFlash">Barry Allen / The Flash</a>
           </td>
-          <td colspan="5">Principal</td>
+          <td colspan="5" class="green">Principal</td>
         </tr>
         <tr>
           <td>
@@ -451,7 +464,7 @@
           <td>
             <a href="./personagens/iris-west.html#irisWest">Iris West</a>
           </td>
-          <td colspan="5">Principal</td>
+          <td colspan="5" class="green">Principal</td>
         </tr>
         <tr>
           <td>
@@ -460,13 +473,13 @@
           <td>
             <a href="./personagens/caitlin-snow.html#caitlinNevasca">Caitlin Snow / Nevasca</a>
           </td>
-          <td colspan="5">Principal</td>
+          <td colspan="5" class="green">Principal</td>
         </tr>
         <tr>
           <td>Rick Cosnett</td>
           <td>Eddie Thawne</td>
-          <td>Principal</td>
-          <td colspan="2">Participa&ccedil;&atilde;o</td>
+          <td class="green">Principal</td>
+          <td colspan="2" class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="2"></td>
         </tr>
         <tr>
@@ -476,21 +489,21 @@
           <td>
             <a href="./personagens/cisco-ramon.html#ciscoVibro">Cisco Ramon / Vibro</a>
           </td>
-          <td colspan="5">Principal</td>
+          <td colspan="5" class="green">Principal</td>
         </tr>
         <tr>
           <td rowspan="2">Tom Cavanagh</td>
           <td>Eobard Thawne / Flash Reverso</td>
-          <td>Principal</td>
-          <td>Recorrente</td>
+          <td class="green">Principal</td>
+          <td class="red">Recorrente</td>
           <td></td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td>Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
         </tr>
         <tr>
           <td>Harrison Wells</td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td colspan="4">Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td colspan="4" class="green">Principal</td>
         </tr>
         <tr>
           <td>
@@ -499,53 +512,53 @@
           <td>
             <a href="./personagens/joe-west.html#joeWest">Joe West</a>
           </td>
-          <td colspan="5">Principal</td>
+          <td colspan="5" class="green">Principal</td>
         </tr>
         <tr>
           <td>Keiynan Lonsdale</td>
           <td>Wally West / Kid Flash</td>
           <td></td>
-          <td colspan="3">Principal</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td colspan="3" class="green">Principal</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
         </tr>
         <tr>
           <td>Neil Sandilands</td>
           <td>Clifford DeVoe / Pensador</td>
           <td colspan="3"></td>
-          <td>Principal</td>
+          <td class="green">Principal</td>
           <td></td>
         </tr>
         <tr>
           <td>Danielle Nicolet</td>
           <td>Cecile Horton</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td></td>
-          <td colspan="2">Recorrente</td>
-          <td>Principal</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td class="green">Principal</td>
         </tr>
         <tr>
           <td>Hartley Sawyer</td>
           <td>Ralph Dibny / Homem El&aacute;stico</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
-          <td>Principal</td>
+          <td class="red">Recorrente</td>
+          <td class="green">Principal</td>
         </tr>
         <tr>
           <td>Jessica Parker Kenedy</td>
           <td>Nora Allen / XS</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
-          <td>Principal</td>
+          <td class="red">Recorrente</td>
+          <td class="green">Principal</td>
         </tr>
         <tr>
           <td>Chris Klein</td>
           <td>Orlin Dwyer / Cicada</td>
           <td colspan="4"></td>
-          <td>Principal</td>
+          <td class="green">Principal</td>
         </tr>
       </tbody>
     </table>
-    <h3>Recorrente</h3>
+    <h3 class="red">Recorrente</h3>
     <table>
       <thead>
         <tr>
@@ -565,213 +578,213 @@
         <tr>
           <td>Michelle Harrison</td>
           <td>Nora Allen</td>
-          <td>Recorrente</td>
-          <td colspan="2">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td colspan="2" class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Patrick Sabongui</td>
           <td>David Singh</td>
-          <td colspan="2">Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td colspan="2">Recorrente</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td colspan="2" class="red">Recorrente</td>
         </tr>
         <tr>
           <td rowspan="3">John Wesley Shipp</td>
           <td>Henry Allen</td>
-          <td colspan="2">Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Jay Garrick / Flash</td>
           <td></td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td>Recorrente</td>
-          <td colspan="2">Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td colspan="2" class="blue">Participa&ccedil;&atilde;o</td>
         </tr>
         <tr>
           <td>Barry Allen / Flash da Terra 90</td>
           <td colspan="4"></td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
         </tr>
         <tr>
           <td>Robbie Amell</td>
           <td>Ronnie Raymond / Nuclear</td>
-          <td>Recorrente</td>
-          <td colspan="2">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td colspan="2" class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Wentworth Miller</td>
           <td>Leonard Snart / Capit&atilde;o Frio</td>
-          <td>Recorrente</td>
-          <td colspan="3">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td colspan="3" class="blue">Participa&ccedil;&atilde;o</td>
           <td></td>
         </tr>
         <tr>
           <td>Dominic Purcell</td>
           <td>Mick Rory / Onda T&eacute;rmica</td>
-          <td>Recorrente</td>
-          <td colspan="4">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td colspan="4" class="blue">Participa&ccedil;&atilde;o</td>
         </tr>
         <tr>
           <td>Clancy Brown</td>
           <td>Wade Eiling</td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="4"></td>
         </tr>
         <tr>
           <td>Amanda Pays</td>
           <td>Tina McGee</td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td>Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Roger Howarth</td>
           <td>Mason Bridge</td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="4"></td>
         </tr>
         <tr>
           <td>Victor Garber</td>
           <td>Martin Stein / Nuclear</td>
-          <td colspan="2">Recorrente</td>
-          <td colspan="2">Participa&ccedil;&atilde;o</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td colspan="2" class="blue">Participa&ccedil;&atilde;o</td>
           <td></td>
         </tr>
         <tr>
           <td>Malese Jow</td>
           <td>Linda Park / Doutora Luz</td>
-          <td>Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Lian McIntyre</td>
           <td>Mark Mardon / Mago do Tempo</td>
-          <td>Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Peyton List</td>
           <td>Lisa Snart / Patinadora Dourada</td>
-          <td>Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Matt Letscher</td>
           <td>Eobard Thawne / Flash Reverso</td>
-          <td colspan="2">Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Ciara Ren&eacute;e</td>
           <td>Kendra Saunders / Mulher-Gavi&atilde;o</td>
-          <td>Participa&ccedil;&atilde;o</td>
-          <td>Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Teddy Sears</td>
           <td>Hunter Zolomon / Zoom</td>
           <td></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="2"></td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
         </tr>
         <tr>
           <td>Shantel VanSanten</td>
           <td>Patty Spivot</td>
           <td></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="3"></td>
         </tr>
         <tr>
           <td>Vanessa A. Williams</td>
           <td>Francine West</td>
           <td></td>
-          <td>Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Violett Beane</td>
           <td>Jesse Chambers Wells / Jesse Quick</td>
           <td></td>
-          <td colspan="2">Recorrente</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td colspan="2" class="red">Recorrente</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td></td>
         </tr>
         <tr>
           <td>Tom Felton</td>
           <td>Julian Albert / Doutor Alquimia</td>
           <td colspan="2"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Jessica Camacho</td>
           <td>Cynthia / Cigana</td>
           <td colspan="2"></td>
-          <td colspan="2">Recorrente</td>
+          <td colspan="2" class="red">Recorrente</td>
           <td></td>
         </tr>
         <tr>
           <td>Anne Dudek</td>
           <td>Tracy Brand</td>
           <td colspan="2"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td colspan="2"></td>
         </tr>
         <tr>
           <td>Anthony Harisson</td>
           <td rowspan="2">Gregory Wolfe</td>
-          <td>Participa&ccedil;&atilde;o</td>
+          <td class="blue">Participa&ccedil;&atilde;o</td>
           <td colspan="4"></td>
         </tr>
         <tr>
           <td>Richard Brooks</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td></td>
         </tr>
         <tr>
           <td>Kim Engelbrecht</td>
           <td>Marlize DeVoe / Mec&acirc;nica</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td></td>
         </tr>
         <tr>
           <td>Donna Pescow</td>
           <td>Sharon Finkle</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td></td>
         </tr>
         <tr>
           <td>Katee Sackhoff</td>
           <td>Amunet Black / Forja</td>
           <td colspan="3"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
           <td></td>
         </tr>
         <tr>
           <td>Kiana Madeira</td>
           <td>Spencer Young / Spin</td>
           <td colspan="4"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
         </tr>
         <tr>
           <td>Kyle Secor</td>
           <td>Thomas Snow / Geada</td>
           <td colspan="4"></td>
-          <td>Recorrente</td>
+          <td class="red">Recorrente</td>
         </tr>
       </tbody>
     </table>
@@ -779,7 +792,7 @@
   <section id="production">
     <article>
       <h2>Produ&ccedil;&atilde;o</h2>
-      <p>Em julho de 2013, foi anunciado que os co-criadores de Arrow, Greg Berlanti e Andrew Kreisberg, al&eacute;m dos diretores David Nutter e Geoff Johns, iriam desenvolver uma s&eacute;rie de televis&atilde;o do her&oacute;i Flash para a The CW. A s&eacute;rie mostraria a hist&oacute;ria da origem de Barry Allen. Ap&oacute;s o an&uacute;ncio, Greg Berlanti revelou que Barry Allen iria aparecer pela primeira vez como um personagem recorrente em Arrow em tr&ecirc;s epis&oacute;dios da segunda temporada, todos escritos por Greg Berlanti, Andrew Kreisberg e Geoff Johns, e que o &uacute;ltimo dos epis&oacute;dios seria como um piloto para a s&eacute;rie. Assim, Andrew Kreisberg acrescentou que Barry Allen ser&aacute; um cientista forense e dar&aacute; introdu&ccedil;&atilde;o de seus superpoderes, assim como a sinopse, de uma maneira muito humana e comediante.</p>
+      <p>Em julho de 2013, foi anunciado que os co-criadores de Arrow, Greg Berlanti e Andrew Kreisberg, al&eacute;m dos diretores David Nutter e Geoff Johns, iriam desenvolver uma s&eacute;rie de televis&atilde;o do her&oacute;i Flash para a The CW. A s&eacute;rie mostraria a hist&oacute;ria da origem de Barry Allen. Ap&oacute;s o an&uacute;ncio, Greg Berlanti revelou que Barry Allen iria aparecer pela primeira vez como um personagem class="red" recorrente em Arrow em tr&ecirc;s epis&oacute;dios da segunda temporada, todos escritos por Greg Berlanti, Andrew Kreisberg e Geoff Johns, e que o &uacute;ltimo dos epis&oacute;dios seria como um piloto para a s&eacute;rie. Assim, Andrew Kreisberg acrescentou que Barry Allen ser&aacute; um cientista forense e dar&aacute; introdu&ccedil;&atilde;o de seus superpoderes, assim como a sinopse, de uma maneira muito humana e comediante.</p>
       <h3>Caracteriza&ccedil;&atilde;o</h3>
       <p>Sobre o personagem, Geoff Johns afirmou que a caracteriza&ccedil;&atilde;o na s&eacute;rie ser&aacute; semelhante aos quadrinhos, com seu tradicional traje vermelho, e n&atilde;o uma imita&ccedil;&atilde;o pobre. Andrew Kreisberg acrescentou: "Sem agasalhos ou codinomes estranhos, ele ser&aacute; o Flash". Os produtores procuraram uma forma de retratar a super velocidade do Flash. Por fim, foi revelado que o elenco seria supervisionado pela mesma equipe que trabalha em Arrow.</p>
       <h3>Cria&ccedil;&atilde;o</h3>
@@ -793,7 +806,9 @@
     </article>
   </section>
   <footer>
-    Copyright &copy; <a href="http://www.cwtv.com/">The CW</a>
+    <p id="copyright">
+      Copyright &copy; <a href="http://www.cwtv.com/">The CW</a>
+    </p>
   </footer>
 </body>
 </html>
