@@ -11,7 +11,7 @@ body, html {
   background-image: url(../imgs/header-the-flash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: 60%;
   overflow: hidden;
 }
 
@@ -38,7 +38,8 @@ body, html {
 }
 
 .logo {
-  width: 420px;
+  width: 80vw;
+  max-width: 470px;
 }
 
 nav {
@@ -155,7 +156,7 @@ section {
 }
 
 p {
-  margin: 0 10px 15px;
+  margin: 0 0 15px;
 }
 
 figure {
