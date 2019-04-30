@@ -207,9 +207,12 @@ function exercicio15() {
   var res = "";
   do {
     if (res) {
-      alert("Apenas aceitarei palavra com 6 caracteres");
+      alert("Apenas aceitarei palavra iniciando com P ou que contenha F");
     }
   
     res = prompt("Digite uma palavra iniciando com P ou que contenha F");
-  } while(/$p+/gi.test(res) || /f/gi.test(res));  
+
+  } while(!/(^p|f)+/gi.test(res));
+
+  alert("Obrigado!");
 }
